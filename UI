@@ -7679,32 +7679,3 @@ library.AddWindow = library.CreateWindow
 library.Window = library.CreateWindow
 library.W = library.CreateWindow
 return library, library_flags, library.subs
-
-wait()
-
-local ScreenGui1 = Instance.new("ScreenGui")
-local ImageButton1 = Instance.new("ImageButton")
-local UICorner = Instance.new("UICorner")
-
-ScreenGui1.Name = "ImageButton"
-ScreenGui1.Parent = game.CoreGui
-ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-ImageButton1.Parent = ScreenGui1
-ImageButton1.BackgroundTransparency = 1 -- Make the background transparent
-ImageButton1.BorderSizePixel = 0
-ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-ImageButton1.Size = UDim2.new(0, 50, 0, 50)
-ImageButton1.Draggable = true
-ImageButton1.Image = "rbxassetid://17104270399"
-ImageButton1.MouseButton1Down:Connect(function()
-  game:GetService("VirtualInputManager"):SendKeyEvent(true,303,false,game)
-  game:GetService("VirtualInputManager"):SendKeyEvent(false,303,false,game)
-end)
-UICorner.Parent = ImageButton1
-
-
-do local GUI = game.CoreGui:FindFirstChild("ZAHUB");if GUI then GUI:Destroy();end;if _G.Color == nil then
-    _G.Color = Color3.fromRGB(230, 5, 12)
-   end 
-end
