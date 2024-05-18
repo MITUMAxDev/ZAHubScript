@@ -15,7 +15,7 @@ local utility = {}
 local objects = {}
 local themes = {
 	Background = Color3.fromRGB(24, 24, 24), 
-	Glow = Color3.fromRGB(0, 0, 0), 
+	Glow = Color3.fromRGB(100, 0, 255), 
 	Accent = Color3.fromRGB(10, 10, 10), 
 	LightContrast = Color3.fromRGB(20, 20, 20), 
 	DarkContrast = Color3.fromRGB(14, 14, 14),  
@@ -280,7 +280,7 @@ do
 						Position = UDim2.new(0, 12, 0, 19),
 						Size = UDim2.new(1, -46, 0, 16),
 						ZIndex = 5,
-						Font = Enum.Font.GothamBold,
+						Font = Enum.Font.LuckiestGuy,
 						Text = title,
 						TextColor3 = themes.TextColor,
 						TextSize = 14,
@@ -309,7 +309,7 @@ do
 			Size = UDim2.new(1, 0, 0, 26),
 			ZIndex = 3,
 			AutoButtonColor = false,
-			Font = Enum.Font.Gotham,
+			Font = Enum.Font.Arcade,
 			Text = "",
 			TextSize = 14
 		}, {
@@ -320,7 +320,7 @@ do
 				Position = UDim2.new(0, 40, 0.5, 0),
 				Size = UDim2.new(0, 76, 1, 0),
 				ZIndex = 3,
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.Arcade,
 				Text = title,
 				TextColor3 = themes.TextColor,
 				TextSize = 12,
@@ -394,7 +394,7 @@ do
 					BackgroundTransparency = 1,
 					Size = UDim2.new(1, 0, 0, 20),
 					ZIndex = 2,
-					Font = Enum.Font.GothamSemibold,
+					Font = Enum.Font.ArcadeSemibold,
 					Text = title,
 					TextColor3 = themes.TextColor,
 					TextSize = 12,
@@ -543,7 +543,7 @@ do
 				Position = UDim2.new(0, 10, 0, 8),
 				Size = UDim2.new(1, -40, 0, 16),
 				ZIndex = 4,
-				Font = Enum.Font.GothamSemibold,
+				Font = Enum.Font.ArcadeSemibold,
 				TextColor3 = themes.TextColor,
 				TextSize = 14.000,
 				TextXAlignment = Enum.TextXAlignment.Left
@@ -554,7 +554,7 @@ do
 				Position = UDim2.new(0, 10, 1, -24),
 				Size = UDim2.new(1, -40, 0, 16),
 				ZIndex = 4,
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.Arcade,
 				TextColor3 = themes.TextColor,
 				TextSize = 12.000,
 				TextXAlignment = Enum.TextXAlignment.Left
@@ -590,7 +590,7 @@ do
 		notification.Text.Text = text
 		
 		local padding = 10
-		local textSize = game:GetService("TextService"):GetTextSize(text, 12, Enum.Font.Gotham, Vector2.new(math.huge, 16))
+		local textSize = game:GetService("TextService"):GetTextSize(text, 12, Enum.Font.Arcade, Vector2.new(math.huge, 16))
 		
 		notification.Position = library.lastNotification or UDim2.new(0, padding, 1, -(notification.AbsoluteSize.Y + padding))
 		notification.Size = UDim2.new(0, 0, 0, 60)
@@ -676,7 +676,7 @@ do
 				BackgroundTransparency = 1,
 				Size = UDim2.new(1, 0, 1, 0),
 				ZIndex = 3,
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.Arcade,
 				Text = title,
 				TextColor3 = themes.TextColor,
 				TextSize = 12,
@@ -738,7 +738,7 @@ do
 				Position = UDim2.new(0, 10, 0.5, 1),
 				Size = UDim2.new(0.5, 0, 1, 0),
 				ZIndex = 3,
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.Arcade,
 				Text = title,
 				TextColor3 = themes.TextColor,
 				TextSize = 12,
@@ -811,7 +811,7 @@ do
 				Position = UDim2.new(0, 10, 0.5, 1),
 				Size = UDim2.new(0.5, 0, 1, 0),
 				ZIndex = 3,
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.Arcade,
 				Text = title,
 				TextColor3 = themes.TextColor,
 				TextSize = 12,
@@ -836,7 +836,7 @@ do
 					Position = UDim2.new(0, 5, 0, 0),
 					Size = UDim2.new(1, -10, 1, 0),
 					ZIndex = 3,
-					Font = Enum.Font.GothamSemibold,
+					Font = Enum.Font.ArcadeSemibold,
 					Text = default or "",
 					TextColor3 = themes.TextColor,
 					TextSize = 11
@@ -919,7 +919,7 @@ do
 				Position = UDim2.new(0, 10, 0.5, 1),
 				Size = UDim2.new(1, 0, 1, 0),
 				ZIndex = 3,
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.Arcade,
 				Text = title,
 				TextColor3 = themes.TextColor,
 				TextSize = 12,
@@ -943,7 +943,7 @@ do
 					ClipsDescendants = true,
 					Size = UDim2.new(1, 0, 1, 0),
 					ZIndex = 3,
-					Font = Enum.Font.GothamSemibold,
+					Font = Enum.Font.ArcadeSemibold,
 					Text = default and default.Name or "None",
 					TextColor3 = themes.TextColor,
 					TextSize = 11
@@ -1024,7 +1024,7 @@ do
 				Position = UDim2.new(0, 10, 0.5, 1),
 				Size = UDim2.new(0.5, 0, 1, 0),
 				ZIndex = 3,
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.Arcade,
 				Text = title,
 				TextColor3 = themes.TextColor,
 				TextSize = 12,
@@ -1076,7 +1076,7 @@ do
 				Position = UDim2.new(0, 10, 0, 8),
 				Size = UDim2.new(1, -40, 0, 16),
 				ZIndex = 2,
-				Font = Enum.Font.GothamSemibold,
+				Font = Enum.Font.ArcadeSemibold,
 				Text = title,
 				TextColor3 = themes.TextColor,
 				TextSize = 14,
@@ -1197,7 +1197,7 @@ do
 							BackgroundTransparency = 1,
 							Size = UDim2.new(0.400000006, 0, 1, 0),
 							ZIndex = 2,
-							Font = Enum.Font.Gotham,
+							Font = Enum.Font.Arcade,
 							Text = "R:",
 							TextColor3 = themes.TextColor,
 							TextSize = 10.000
@@ -1208,7 +1208,7 @@ do
 							Position = UDim2.new(0.300000012, 0, 0, 0),
 							Size = UDim2.new(0.600000024, 0, 1, 0),
 							ZIndex = 2,
-							Font = Enum.Font.Gotham,
+							Font = Enum.Font.Arcade,
 							PlaceholderColor3 = themes.DarkContrast,
 							Text = "255",
 							TextColor3 = themes.TextColor,
@@ -1231,7 +1231,7 @@ do
 							BackgroundTransparency = 1,
 							ZIndex = 2,
 							Size = UDim2.new(0.400000006, 0, 1, 0),
-							Font = Enum.Font.Gotham,
+							Font = Enum.Font.Arcade,
 							Text = "G:",
 							TextColor3 = themes.TextColor,
 							TextSize = 10.000
@@ -1242,7 +1242,7 @@ do
 							Position = UDim2.new(0.300000012, 0, 0, 0),
 							Size = UDim2.new(0.600000024, 0, 1, 0),
 							ZIndex = 2,
-							Font = Enum.Font.Gotham,
+							Font = Enum.Font.Arcade,
 							Text = "255",
 							TextColor3 = themes.TextColor,
 							TextSize = 10.000
@@ -1264,7 +1264,7 @@ do
 							BackgroundTransparency = 1,
 							Size = UDim2.new(0.400000006, 0, 1, 0),
 							ZIndex = 2,
-							Font = Enum.Font.Gotham,
+							Font = Enum.Font.Arcade,
 							Text = "B:",
 							TextColor3 = themes.TextColor,
 							TextSize = 10.000
@@ -1275,7 +1275,7 @@ do
 							Position = UDim2.new(0.300000012, 0, 0, 0),
 							Size = UDim2.new(0.600000024, 0, 1, 0),
 							ZIndex = 2,
-							Font = Enum.Font.Gotham,
+							Font = Enum.Font.Arcade,
 							Text = "255",
 							TextColor3 = themes.TextColor,
 							TextSize = 10.000
@@ -1298,7 +1298,7 @@ do
 						BackgroundTransparency = 1,
 						Size = UDim2.new(1, 0, 1, 0),
 						ZIndex = 3,
-						Font = Enum.Font.Gotham,
+						Font = Enum.Font.Arcade,
 						Text = "Submit",
 						TextColor3 = themes.TextColor,
 						TextSize = 11.000
@@ -1548,7 +1548,7 @@ do
             Position = UDim2.new(0, 10, 0, 6),
             Size = UDim2.new(0.5, 0, 0, 16),
             ZIndex = 3,
-            Font = Enum.Font.Gotham,
+            Font = Enum.Font.Arcade,
             Text = title,
             TextColor3 = themes.TextColor,
             TextSize = 12,
@@ -1562,7 +1562,7 @@ do
             Position = UDim2.new(1, -30, 0, 6),
             Size = UDim2.new(0, 20, 0, 16),
             ZIndex = 3,
-            Font = Enum.Font.GothamSemibold,
+            Font = Enum.Font.ArcadeSemibold,
             Text = default or min,
             TextColor3 = themes.TextColor,
             TextSize = 12,
@@ -1715,7 +1715,7 @@ end
 					Position = UDim2.new(0, 10, 0.5, 1),
 					Size = UDim2.new(1, -42, 1, 0),
 					ZIndex = 3,
-					Font = Enum.Font.Gotham,
+					Font = Enum.Font.Arcade,
 					Text = title,
 					TextColor3 = themes.TextColor,
 					TextSize = 12,
@@ -1823,7 +1823,7 @@ end
 		if toggle then
 			-- page button
 			button.Title.TextTransparency = 0
-			button.Title.Font = Enum.Font.GothamSemibold
+			button.Title.Font = Enum.Font.ArcadeSemibold
 			
 			if button:FindFirstChild("Icon") then
 				button.Icon.ImageTransparency = 0
@@ -1885,7 +1885,7 @@ end
 			page:Resize(true)
 		else
 			-- page button
-			button.Title.Font = Enum.Font.Gotham
+			button.Title.Font = Enum.Font.Arcade
 			button.Title.TextTransparency = 0.65
 			
 			if button:FindFirstChild("Icon") then
@@ -2127,7 +2127,7 @@ end
 					Position = UDim2.new(0, 10, 0, 0),
 					Size = UDim2.new(1, -10, 1, 0),
 					ZIndex = 3,
-					Font = Enum.Font.Gotham,
+					Font = Enum.Font.Arcade,
 					Text = value,
 					TextColor3 = themes.TextColor,
 					TextSize = 12,
