@@ -280,7 +280,7 @@ do
 						Position = UDim2.new(0, 12, 0, 19),
 						Size = UDim2.new(1, -46, 0, 16),
 						ZIndex = 5,
-						Font = Enum.Font.LuckiestGuy,
+						Font = Enum.Font.Arcade,
 						Text = title,
 						TextColor3 = themes.TextColor,
 						TextSize = 14,
