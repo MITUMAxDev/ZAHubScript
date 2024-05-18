@@ -19,7 +19,7 @@ local themes = {
 	Accent = Color3.fromRGB(10, 10, 10), 
 	LightContrast = Color3.fromRGB(20, 20, 20), 
 	DarkContrast = Color3.fromRGB(14, 14, 14),  
-	TextColor = Color3.fromRGB(255, 255, 255)
+	TextColor = Color3.fromRGB(100, 0, 255)
 }
 
 do
@@ -479,6 +479,13 @@ do
 			
 			container.ClipsDescendants = false
 			self.position = nil
+			
+			local soundId = "rbxassetid://17208361335" 
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = game.Workspace 
+sound:Play()
+
 		else
 			self.position = container.Position
 			container.ClipsDescendants = true
@@ -491,6 +498,12 @@ do
 				Position = self.position + UDim2.new(0, 0, 0, 428)
 			}, 0.2)
 			wait(0.2)
+			
+			local soundId = "rbxassetid://17208361335" 
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = game.Workspace 
+sound:Play()
 		end
 		
 		self.toggling = false
@@ -705,6 +718,12 @@ do
 			
 			wait(0.2)
 			utility:Tween(button.Title, {TextSize = 12}, 0.2)
+			
+			local soundId = "rbxassetid://17208361335" 
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = game.Workspace 
+sound:Play()
 			
 			if callback then
 				callback(function(...)
@@ -1817,6 +1836,11 @@ end
 	function library:SelectPage(page, toggle)
 		
 		if toggle and self.focusedPage == page then -- already selected
+		  local soundId = "rbxassetid://17208372272" 
+      local sound = Instance.new("Sound")
+      sound.SoundId = soundId
+      sound.Parent = game.Workspace 
+      sound:Play()
 			return
 		end
 		
@@ -1837,6 +1861,11 @@ end
 			
 			if focusedPage then
 				self:SelectPage(focusedPage)
+				local soundId = "rbxassetid://17208405682" 
+        local sound = Instance.new("Sound")
+        sound.SoundId = soundId
+        sound.Parent = game.Workspace 
+        sound:Play()
 			end
 			
 			-- sections
